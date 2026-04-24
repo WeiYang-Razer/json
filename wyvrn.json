@@ -1,0 +1,21 @@
+{
+  "name": "json",
+  "version": "3.11.3.0",
+  "schemaVersion": 2,
+  "kind": "HeaderOnlyLib",
+  "description": "TODO: one-line description of json",
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [
+      "-DJSON_BuildTests=OFF"
+    ],
+    "installDir": "install"
+  }
+}

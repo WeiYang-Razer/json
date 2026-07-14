@@ -1,12 +1,17 @@
 {
   "name": "json",
-  "version": "3.11.3.0",
+  "version": "3.12.0.0",
   "schemaVersion": 2,
   "kind": "HeaderOnlyLib",
   "description": "TODO: one-line description of json",
   "dependencies": {},
   "build": {
     "system": "cmake",
+    "generator": [
+      "Ninja Multi-Config",
+      "Visual Studio 17 2022",
+      "Visual Studio 16 2019"
+    ],
     "configs": [
       "Debug",
       "Release",
@@ -17,5 +22,13 @@
       "-DJSON_BuildTests=OFF"
     ],
     "installDir": "install"
+  },
+  "compatibility": {
+    "os": "exact",
+    "arch": "exact",
+    "compiler": "exact",
+    "compiler.version": "exact-or-newer",
+    "compiler.cppstd": "exact-or-newer",
+    "compiler.runtime": "exact"
   }
 }

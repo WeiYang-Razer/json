@@ -30,7 +30,28 @@ bin/
 CMakeModules/
 appveyor.yml
 .travis.yml
+.cirrus.yml
 *.pc.in
 *.autopkg
 library.json
 package.json
+
+src/
+tools/
+
+# Alternative build systems (recipe is cmake-only)
+BUILD.bazel
+MODULE.bazel
+meson.build
+Package.swift
+Makefile
+
+# Repo metadata / dev tooling
+.clang-tidy
+.reuse/
+ChangeLog.md
+CITATION.cff
+FILES.md
+
+# Amalgamated header unused (JSON_MultipleHeaders=ON uses include/)
+single_include/

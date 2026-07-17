@@ -1,9 +1,9 @@
 {
   "name": "json",
-  "version": "3.12.0.0",
+  "version": "3.12.0.1",
   "schemaVersion": 2,
   "kind": "HeaderOnlyLib",
-  "description": "TODO: one-line description of json",
+  "description": "nlohmann/json - JSON for Modern C++, header-only library with intuitive STL-like syntax",
   "dependencies": {},
   "build": {
     "system": "cmake",
